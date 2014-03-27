@@ -66,7 +66,7 @@ public class MusicPlayer extends Activity implements OnItemClickListener,Callbac
 						savedInstanceState.getString("BreakTime"), Toast.LENGTH_LONG).show();
 			}
 		}
-		/**git test,can you find me?**/
+		/**git test,can you find me?yes,you can!**/
 		
 		entity = CallbackDeleteEntity.getInstance();
 		entity.setMethodCallback(this);
