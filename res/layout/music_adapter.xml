@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+    
+	<TextView 
+	    android:id="@+id/music_name"
+	    android:layout_width="wrap_content"
+   		android:layout_height="wrap_content"
+   		android:textColor="@android:color/white"
+   		android:textSize="20dp"
+	    />
+	
+	<TextView 
+	    android:id="@+id/singer"
+	    android:layout_width="wrap_content"
+   		android:layout_height="wrap_content"
+   		android:layout_below="@id/music_name"
+	    android:textColor="@android:color/white"
+	    android:textSize="10dp"
+	    />
+	
+	<TextView 
+        android:id="@+id/duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:textColor="@android:color/white"
+        android:textSize="22dp"
+        android:paddingRight="30dp"
+        />
+	
+	<CheckBox 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:paddingRight="30dp"
+        android:id="@+id/is_delete"
+	    />
+	
+</RelativeLayout>

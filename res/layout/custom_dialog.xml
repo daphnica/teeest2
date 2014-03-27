@@ -1,0 +1,39 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_gravity="center_horizontal"
+    tools:context=".MainActivity" >
+
+    <ImageView
+        android:id="@+id/noti_icon"
+        android:layout_width="48.0dip"
+        android:layout_height="48.0dip"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:contentDescription="@string/app_name"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/ic_launcher" />
+    
+    <ProgressBar
+        android:id="@+id/notiBar"
+        android:layout_marginTop="5dp"
+        android:max="100"
+        android:layout_gravity="center_vertical"
+        android:layout_width="180dip"
+        android:layout_height="wrap_content" 
+        style="?android:attr/progressBarStyleHorizontal"
+        />
+    
+    <TextView
+        android:id="@+id/notiText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:text="123"
+        />
+    
+</LinearLayout>
