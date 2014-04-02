@@ -30,8 +30,6 @@ public class DownloadTask implements CallbackProcessEntity.OnMethodCallback{
 	
 	private ConnectivityManager connectivityManager;
 	private NetworkInfo mMobileInfo,mWifiInfo,mActiveInfo;
-	//进度
-	private int nProgress = 0;
 	
 	private MusicUtil mMusicUtil;
 	private MyBroadcastReceiver mReceiver;
@@ -126,6 +124,7 @@ public class DownloadTask implements CallbackProcessEntity.OnMethodCallback{
 		context.getContentResolver().registerContentObserver(Uri.parse("content://downloads/my_downloads"),
 				true, mDownloadObserver);
 		
+		//回调
 		CallbackProcessEntity entity = CallbackProcessEntity.getInstance();
 		entity.setMethodCallback(this);
 	}

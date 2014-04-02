@@ -1,6 +1,5 @@
 package com.mymusicplayer.broadcast;
 
-import android.app.AlertDialog;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
@@ -12,15 +11,12 @@ import com.mymusicplayer.MusicPlayer;
 public class MyBroadcastReceiver extends BroadcastReceiver {
 
 	private String action;
-	private AlertDialog dialog;
 	
 	@Override
 	public void onReceive(Context context, Intent intent) {
 		action=intent.getAction();
 		if(action.equals(Intent.ACTION_MEDIA_SCANNER_STARTED)){
 			Log.e("", "scanner starts");
-//			dialog = new AlertDialog.Builder(context).setMessage("正在扫描").create();
-//			dialog.show();
 		}else if(action.equals(Intent.ACTION_MEDIA_SCANNER_SCAN_FILE)){
 			Log.e("", "scanner file");
 			try {
@@ -46,7 +42,6 @@ public class MyBroadcastReceiver extends BroadcastReceiver {
 			}
 		}else if(action.equals(Intent.ACTION_MEDIA_SCANNER_FINISHED)){
 			Log.e("", "scanner finish");
-//			dialog.dismiss();
 			if(MusicPlayer.mMusicAdapter==null){
 				return;
 			}

@@ -27,7 +27,7 @@ public class DownloadObserver extends ContentObserver{
 	private int nStatus = -100;
 	
 	private DownloadManager.Query mBaseQuery;
-	private boolean completeFlag = false;
+//	private boolean completeFlag = false;
 	
 	private Context context;
 	private MusicUtil mMusicUtil;
@@ -55,7 +55,7 @@ public class DownloadObserver extends ContentObserver{
 		this.cDownloadManager = downloadManager;
 		this.downloadIdList = downloadIdList;
 		nStatus = -100;
-		completeFlag = false;
+//		completeFlag = false;
 	}
 	
 	@Override
