@@ -111,7 +111,7 @@ public class DownloadObserver extends ContentObserver{
 					bean.setStatus(status);
 				}
 				
-				Message msg = new Message();
+				Message msg = handler.obtainMessage();
 				//下载状态为完成时的操作
 				if(bean.getStatus()==DownloadManager.STATUS_SUCCESSFUL){
 					msg.what=Constants.QUERY_DOWNLOAD_COMPLETE;
