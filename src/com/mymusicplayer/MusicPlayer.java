@@ -69,7 +69,7 @@ public class MusicPlayer extends Activity implements OnItemClickListener,
 						Toast.LENGTH_LONG).show();
 			}
 		}
-		/** git test,can you find me?yes,you can!no10 **/
+		/** git test,can you find me?yes,you can!no11 **/
 
 		entity = CallbackDeleteEntity.getInstance();
 		entity.setMethodCallback(this);

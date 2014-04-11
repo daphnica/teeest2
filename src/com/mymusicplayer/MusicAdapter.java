@@ -32,6 +32,7 @@ public class MusicAdapter extends BaseAdapter {
 	private CallbackDeleteEntity entity;
 	
 	public MusicAdapter() {
+		/* another git test*/
 	}
 	
 	public static MusicAdapter getInstance(){
